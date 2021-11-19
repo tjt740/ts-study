@@ -1,5 +1,9 @@
 
 
 
-const msg = '由window发起初次提交 ----------------------- window先修改的 mac拉代码会报错'
-const tjt = '戚思宁'
+const msg = 'mac也在修改该文件'
+<<<<<<< Updated upstream
+const tjt = '谭金涛'
+=======
+const tjt = '谭金涛'
+>>>>>>> Stashed changes
