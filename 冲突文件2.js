@@ -1,1 +1,1 @@
-let a = 'window'
+'mac'
