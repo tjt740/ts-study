@@ -1,0 +1,30 @@
+<nz-layout class="layout">
+  <nz-sider nzCollapsible [nzTrigger]="null">
+    <div class="logo"><img src="http://ihi934.bvimg.com/14056/f26d5e12ca355dd9.png" alt=""><span>RxJS</span></div>
+    <ul class="live type2">
+      <li [routerLink]="['/index/lessons-day1']">初识RxJS</li>
+      <li></li>
+      <li></li>
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <nz-header *ngIf='!isIndex'>
+      <button nz-button nzType="default" nzShape="circle" (click)="goBack()">
+        <i nz-icon nzType="left" nzTheme="outline"></i>
+      </button>
+    </nz-header>
+    <nz-content>
+      <div class="inner-content">
+        <ng-container [ngTemplateOutlet]="open" *ngIf='isIndex'></ng-container>
+        <!-- 渲染视图 -->
+        <router-outlet></router-outlet>
+      </div>
+    </nz-content>
+    <nz-footer>一起学习🤺</nz-footer>
+  </nz-layout>
+</nz-layout>
+
+
+<ng-template #open>
+  <app-index-open></app-index-open>
+</ng-template>
