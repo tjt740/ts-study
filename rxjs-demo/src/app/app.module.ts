@@ -20,6 +20,7 @@ import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { IndexOpenComponent } from './components/index-open/index-open.component';
 import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzInputModule } from 'ng-zorro-antd/input';
 // 服务
 import { UtilsService } from './services/utils.service';
 import { LessonsDay2Component } from './pages/lessons-day2/lessons-day2.component';
@@ -49,6 +50,11 @@ registerLocaleData(zh);
     NzLayoutModule,
     NzIconModule,
     NzButtonModule,
+    NzInputModule,
+
+
+
+
   ],
   providers: [
     { provide: NZ_I18N, useValue: zh_CN },
