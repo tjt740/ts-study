@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes} from '@angular/router';
 import { LessonsDay1Component } from './pages/lessons-day1/lessons-day1.component';
 import { LessonsDay2Component } from './pages/lessons-day2/lessons-day2.component';
+import { LessonsDay3Component } from './pages/lessons-day3/lessons-day3.component';
 import { IndexComponent } from './pages/index/index.component';
 import { NoFoundComponent } from './pages/no-found/no-found.component';
 import { AuthGuard } from './auth/auth.guard';
@@ -22,6 +23,10 @@ const routes: Routes = [
       {
         path: 'lessons-day2',
         component: LessonsDay2Component,
+      },
+      {
+        path: 'lessons-day3',
+        component: LessonsDay3Component,
       }
     ]
   },

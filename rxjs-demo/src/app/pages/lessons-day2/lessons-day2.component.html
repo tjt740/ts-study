@@ -21,17 +21,6 @@
   })
 
 
-  在 subscribe 中用 try/catch 代码块来包裹任意代码是个不错的主意，如果捕获到异常的话，会发送 “Error” 通知：
-
-  var observable = Rx.Observable.create(function subscribe(observer) {
-  try {
-  observer.next(1);
-  observer.next(2);
-  observer.next(3);
-  observer.complete();
-  } catch (err) {
-  observer.error(err); // 如果捕获到异常会发送一个错误
-  }
-  }); -->
+ -->
 
 </div>

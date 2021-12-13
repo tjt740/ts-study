@@ -26,7 +26,7 @@ export class GetWeatherService {
         },
         error: (err) => {
           this.errorInfo$.error(
-            'try路线， .error(xxx)，只会执行一次，不会重复触发！'
+            'xxx$.error(xxx)，只会发布【一次】订阅，不会重复触发！'
           );
         },
         //完成时不传参;也无法传参

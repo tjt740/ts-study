@@ -20,7 +20,7 @@ export class LessonsDay2Component implements OnInit {
       error: (errData) => {
         this.isLoading2 = false;
         this.isDisable = true;
-        this.inputValue = '请求失败，只会执行一次，再次点击不会重复触发！';
+        this.inputValue = '请求失败，只会执行一次订阅，再次点击不会重复触发订阅！';
         console.log('errData:', errData);
       },
       complete: () => {
