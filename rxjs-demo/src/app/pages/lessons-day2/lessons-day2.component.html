@@ -1,0 +1,26 @@
+<div>
+  <p>调用接口</p>
+
+  <button nz-button nzType="primary" (click)="getWeatherInfo1()" [nzLoading]="isLoading1">调用天气接口(方法一)</button>
+
+  <textarea rows="4" nz-input [(ngModel)]="inputValue"></textarea>
+
+  <button nz-button nzType="default" (click)="getErrorData()" [nzLoading]="isLoading2" [disabled]="isDisable">
+    调用天气接口(方法二)
+  </button>
+
+
+  <!--
+  在 Observable 执行中, 可能会发送零个到无穷多个 “Next” 通知。如果发送的是 “Error” 或 “Complete” 通知的话，那么之后不会再发送任何通知了。
+
+
+  Observable.subscribe({
+  next:(x)=>{},
+  error:(err) =>{},
+  complete:()=>{},
+  })
+
+
+ -->
+
+</div>
