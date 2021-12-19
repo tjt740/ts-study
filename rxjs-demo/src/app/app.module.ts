@@ -21,10 +21,16 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 import { IndexOpenComponent } from './components/index-open/index-open.component';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzAlertModule } from 'ng-zorro-antd/alert';
+
 // 服务
 import { UtilsService } from './services/utils.service';
 import { LessonsDay2Component } from './pages/lessons-day2/lessons-day2.component';
 import { LessonsDay3Component } from './pages/lessons-day3/lessons-day3.component';
+import { LessonsDay4Component } from './pages/lessons-day4/lessons-day4.component';
+import { LessonsDay5Component } from './pages/lessons-day5/lessons-day5.component';
+import { LessonsDay6Component } from './pages/lessons-day6/lessons-day6.component';
+
 registerLocaleData(zh);
 
 @NgModule({
@@ -36,7 +42,11 @@ registerLocaleData(zh);
     NoFoundComponent,
     IndexOpenComponent,
     LessonsDay2Component,
-    LessonsDay3Component
+    LessonsDay3Component,
+    LessonsDay4Component,
+    LessonsDay5Component,
+    LessonsDay6Component,
+
   ],
   imports: [
     BrowserModule,
@@ -51,7 +61,7 @@ registerLocaleData(zh);
     NzIconModule,
     NzButtonModule,
     NzInputModule,
-
+    NzAlertModule,
 
 
 
