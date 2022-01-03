@@ -14,9 +14,9 @@ export class GetWeatherService {
   // 第一种方法取参
   getWeatherInfo1(id: number = 12382165, location: string = '杭州') {
     // return this.http.get(API.getWeather + `appid=${id}&city=${location}`);
-    return this.http.post(API.getWeather, { appid: id, city: location });
+    // return this.http.post(API.getWeather, { appid: id, city: location });
     // return this.http.post(API.getWeather, {}, { params: { appid: id, city: location } });
-    // return this.http.get(API.getWeather, { params: { appid: id, city: location } });
+    return this.http.get(API.getWeather, { params: { appid: id, city: location } });
   }
 
   // 第二种方法取参
