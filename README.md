@@ -1,2 +1,3 @@
-# ts-study-demo
-谭金涛学习TypeScript的项目
+这是我学习TypeScript的demo
+
+💕💕💕💕💕
